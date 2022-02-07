@@ -1,13 +1,18 @@
 <template>
   <div id="app">
     <h1>Vue Todo app</h1>
+    <to-do-item label="My ToDo item" :done="true"></to-do-item>
   </div>
 </template>
 
 <script>
+import ToDoItem from './components/ToDoItem.vue';
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    ToDoItem
+  }
 }
 </script>
 
